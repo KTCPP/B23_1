@@ -15,16 +15,17 @@ int main(int argc, const char* argv[]) {
 	*/
 	//main2(c, v);
 
-
+//Die Schleifenbedingung (zwischen den beiden ; in der Schleife) wird überprüft, ob diese stimmt und nur wenn diese stimmt wird die schleife ausgeführt.
+//Sorry, hab da euch genau das falsche erklärt
 	int start = -100;
 	int end = 100;
-	for (int i = start; i > end; i++) {
+	for (int i = start; i <= end; i++) {
 		cout << i << endl;
 	}
 
 	int i = start;
 	while (true) {
-		if (i > end) exit;
+		if !(i <= end) exit;
 		cout << i << endl;
 		i++; // ++i
 	}
